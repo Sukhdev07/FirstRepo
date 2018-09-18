@@ -11,7 +11,7 @@ final class Base
     }
 
 }
-class Child extends Base
+/*class Child extends Base
 
 {
 
@@ -23,7 +23,7 @@ class Child extends Base
 
     }
 
-}
+}*/
 
 class NoExtend
 
