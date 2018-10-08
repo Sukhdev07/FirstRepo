@@ -46,7 +46,8 @@ public class balance
 
         }
  
-       else
+       else if(str.charAt(0)==')'||str.charAt(0)=='}'||str.charAt(0)==']')
+
 
         {
 
@@ -56,6 +57,10 @@ public class balance
 
         }
 
-	}
+      else
+         {  c=result(str.substring(1));
+            return c;
+           }
+  	}
 
 }

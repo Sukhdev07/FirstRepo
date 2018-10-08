@@ -13,36 +13,39 @@ public class Occur
     char[] ch2=ch.toCharArray();
     int i,j=0,o=0,flag=0;
 
-    for(i=0;i<a-b;i++)
+    for(i=0;i<=a-b;i++)
 {
-  
-j=0;   
-if(ch1[i]==ch2[j]) 
-{
-++j;
-while(j<b)
-{
-if(ch1[i+j]==ch2[j])
-{
-flag=1;
+	flag=0;
+	j=0;   
+	if(ch1[i]==ch2[j]) 
+	{
+		++j;
+		while(j<b)
+		{
+			if(ch1[i+j]==ch2[j])
+			{
+				flag=1;
+			}
+			else
+			{
+				flag=0;
+				break;
+			}
+				++j;
 }
-else
-{
-flag=0;
-break;
-}
-++j;
+	if(flag==1)
+	{
+		break;
+	}
 }
 }
 if(flag==1)
 {
 System.out.println("Substring Exists");
-break;
 }
+else
 {
 System.out.println("Substring doesn't exist");
-break;
-}
 }
 }
 
